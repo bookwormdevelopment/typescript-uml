@@ -1,19 +1,18 @@
 {
-  "extends": "tslint:latest",
+  "extends": "tslint:recommended",
   "rules": {
-    "no-unused-expression": false,
     "variable-name": [
       true,
       "allow-leading-underscore"
     ],
-    "whitespace": [
+    "no-console": [
       true,
-      "check-operator",
-      "check-branch",
-      "check-decl",
-      "check-module",
-      "check-separator",
-      "check-type"
+      "log",
+      "warn"
+    ],
+    "quotemark": [
+      true,
+      "single"
     ]
   }
 }

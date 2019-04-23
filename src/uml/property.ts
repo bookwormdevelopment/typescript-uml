@@ -1,65 +1,65 @@
-import { Accessibility } from "./accessibility";
-import { Stereotype } from "./stereotype";
+import { Accessibility } from './accessibility';
+import { Stereotype } from './stereotype';
 
 export abstract class Property {
 
-    private _identifier: string;
-    private _accessibility: Accessibility;
-    private _static: boolean;
-    private _optional: boolean;
-    private _stereotype: Stereotype;
+  private _identifier: string;
+  private _accessibility: Accessibility;
+  private _static: boolean;
+  private _optional: boolean;
+  private _stereotype: Stereotype;
 
-    public get identifier(): string {
-        return this._identifier;
-    }
+  public get identifier(): string {
+    return this._identifier;
+  }
 
-    public set identifier(value: string) {
-        this._identifier = value;
-    }
+  public set identifier(value: string) {
+    this._identifier = value;
+  }
 
-    public get accessibility(): Accessibility {
-        return this._accessibility;
-    }
+  public get accessibility(): Accessibility {
+    return this._accessibility;
+  }
 
-    public set accessibility(value: Accessibility) {
-        this._accessibility = value;
-    }
+  public set accessibility(value: Accessibility) {
+    this._accessibility = value;
+  }
 
-    public get static(): boolean {
-        return this._static;
-    }
+  public get static(): boolean {
+    return this._static;
+  }
 
-    public set static(value: boolean) {
-        this._static = value;
-    }
+  public set static(value: boolean) {
+    this._static = value;
+  }
 
-    /**
-     * Is variable optional
-     *
-     * @type {boolean}
-     * @memberof VariableProperty
-     */
-    public get optional(): boolean {
-        return this._optional;
-    }
+  /**
+   * Is variable optional
+   *
+   * @type {boolean}
+   * @memberof VariableProperty
+   */
+  public get optional(): boolean {
+    return this._optional;
+  }
 
-    public set optional(value: boolean) {
-        this._optional = value;
-    }
+  public set optional(value: boolean) {
+    this._optional = value;
+  }
 
-    public get stereotype(): Stereotype {
-        return this._stereotype;
-    }
+  public get stereotype(): Stereotype {
+    return this._stereotype;
+  }
 
-    public set stereotype(value: Stereotype) {
-        this._stereotype = value;
-    }
+  public set stereotype(value: Stereotype) {
+    this._stereotype = value;
+  }
 
-    constructor(identifier: string, accessibility: Accessibility, stereotype: Stereotype = Stereotype.None) {
-        this._identifier = identifier;
-        this._accessibility = accessibility;
-        this._stereotype = stereotype;
-        this._static = false;
-        this._optional = false;
-    }
+  constructor(identifier: string, accessibility: Accessibility, stereotype: Stereotype = Stereotype.None) {
+    this._identifier = identifier;
+    this._accessibility = accessibility;
+    this._stereotype = stereotype;
+    this._static = false;
+    this._optional = false;
+  }
 }

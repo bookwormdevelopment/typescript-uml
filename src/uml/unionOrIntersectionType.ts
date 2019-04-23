@@ -1,4 +1,4 @@
-import { Type } from "./type";
+import { Type } from './type';
 
 export const enum UnionOrIntersectionTypeKind {
     Union = 100,

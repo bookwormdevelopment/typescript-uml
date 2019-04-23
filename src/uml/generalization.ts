@@ -1,12 +1,12 @@
-import { Link } from "./link";
+import { Link } from './link';
 
 export class Generalization extends Link {
 
-    constructor(fromName: string, toName: string) {
-        super(fromName, toName);
-    }
+  constructor(fromName: string, toName: string) {
+    super(fromName, toName);
+  }
 
-    public toString(): string {
-        return `Generalization(${super.toString()})`;
-    }
+  public toString(): string {
+    return `Generalization(${super.toString()})`;
+  }
 }
